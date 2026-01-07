@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Barber Shop Premium Dark Theme */
+
+@layer base {
+  :root {
+    /* Light mode */
+    --background: 0 0% 98%;
+    --foreground: 20 10% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 10% 15%;
+
+    --primary: 0 50% 30%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 20 60% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 85%;
+    --muted-foreground: 20 5% 45%;
+
+    --accent: 10 85% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 50% 30%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 20 10% 15%;
+    --sidebar-primary: 0 50% 30%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 10 85% 45%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 90%;
+    --sidebar-ring: 0 50% 30%;
+  }
+
+  .dark {
+    /* Dark mode - premium barber aesthetic */
+    --background: 20 8% 12%;
+    --foreground: 0 0% 95%;
+
+    --card: 20 8% 16%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 20 8% 16%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 10 85% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 20 60% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 20 8% 35%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 10 85% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 20 8% 25%;
+    --input: 20 8% 25%;
+    --ring: 10 85% 50%;
+
+    --sidebar-background: 20 8% 12%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 10 85% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 20 60% 45%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 20 8% 25%;
+    --sidebar-ring: 10 85% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+  }
+}
